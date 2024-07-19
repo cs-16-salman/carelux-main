@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>About Us</title>
+  <%- include('./partials/head'); %>
+</head>
+
+<body class="page homepage">
+  <input type="hidden" id="nav_id" value="aboutUs">
+  <header>
+    <%- include('./partials/header'); %>
+  </header>
+
+  <!-- content -->
+  <div class="content">
+    <div class="about-us-hero-banner space-pd-top">
+      <div class="container-full">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-5 wow fadeInLeft" data-wow-delay="0.3s">
+            <img class="about-us-img" src="images/about-us-img.jpg" alt="" />
+          </div>
+          <div class="col-md-7">
+            <div class="about-us-intro">
+              <h3 class="mb-3 wow fadeInDown" data-wow-delay="0.6s">
+                About Us
+              </h3>
+              <div class="w-90 wow fadeInDown" data-wow-delay="0.9s">
+                <%- businessDetails.about %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="company-vm">
+      <div class="container-full">
+        <div class="row">
+          <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.3s">
+            <div class="vm-box">
+              <img src="images/our-vision.png" alt="" />
+              <div class="vm-box-inner">
+                <h3 class="mb-3">Our Vision</h3>
+                <div>
+                  <%- businessDetails.vision %>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 wow fadeInRight" data-wow-delay="0.3s">
+            <div class="vm-box">
+              <img src="images/our-mission.png" alt="" />
+              <div class="vm-box-inner wow fadeInUp" data-wow-delay="0.3s">
+                <h3 class="mb-3">Our Mission</h3>
+                <div>
+                  <%- businessDetails.mission %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ./ content -->
+
+  <footer>
+    <%- include('./partials/footer'); %>
+  </footer>
+</body>
+
+</html>

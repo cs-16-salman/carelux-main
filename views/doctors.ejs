@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Doctors</title>
+  <%- include('./partials/head'); %>
+</head>
+
+<body class="page homepage">
+  <input type="hidden" id="nav_id" value="doctors">
+  <header>
+    <%- include('./partials/header'); %>
+  </header>
+
+  <!-- content -->
+  <div class="banner-area half-bgb auto-height fixed-thumb text-default">
+    <div class="container">
+      <div class="double-items t55">
+        <div class="row" animation-delay="200">
+          <div class="col-lg-5 col-sm-push-7 info" style="padding-top: 38px">
+            <h4 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp">
+              Doctor Details
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <% if(typeof doctors == 'object' && doctors.length == 0){ %>
+        <div class="col-md-4">
+          Coming Soon
+        </div>
+        <% } %>
+
+        <% for(const doc of doctors) { %>
+        <div class="col-md-4">
+          <div class="treatment-1">
+            <img src="<%= doc.avatar %>" style="padding: 10px" />
+            <h2>
+              <%= doc.doc_name %>
+            </h2>
+            <div class="premium-blog-post-content line-clamp">
+              <%- doc.details %>
+            </div>
+            <a href="#" class="premium-blog-excerpt-link elementor-button .line-clamp">Read More »</a>
+          </div>
+        </div>
+        <% } %>
+      </div>
+    </div>
+  </div>
+  <!-- ./ content -->
+
+  <footer>
+    <%- include('./partials/footer'); %>
+  </footer>
+</body>
+
+</html>

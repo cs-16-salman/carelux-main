@@ -1,0 +1,94 @@
+<div class="container-fluid p-0">
+  <nav class="navbar navbar-expand-lg navbar-light align-items-end menu-grad">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="images/logo.jpg" alt="" class="logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item menu-btn mb-view">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item mb-view">
+            <a class="nav-link" href="/doctors">Doctors</a>
+          </li>
+          <li class="nav-item mb-view">
+            <a class="nav-link" href="/hospitals">Hospitals</a>
+          </li>
+          <!-- <li class="nav-item mb-view">
+            <a class="nav-link" href="#">Gallery</a>
+          </li> -->
+          <li class="nav-item mb-view">
+            <a class="nav-link" href="/testimonials">Testimonials</a>
+          </li>
+          <li class="nav-item mb-view">
+            <a class="nav-link" href="/about_us">About Us</a>
+          </li>
+          <li class="nav-item mb-view">
+            <a class="nav-link" href="/contact-us">Contact Us</a>
+          </li>
+          <!-- End Menus display on mobile view -->
+
+          <li class="nav-item email-nav-1" id="phone-nav">
+            <select onchange="doGTranslate(this);">
+              <option value="en|en" selected>English</option>
+              <option value="en|ar">Arabic</option>
+              <option value="en|hi">Hindi</option>
+              <option value="en|fa">Persian</option>
+              <option value="en|ur">Urdu</option>
+            </select>
+
+            <div id="google_translate_element2"></div>
+          </li>
+          <li class="nav-item email-nav-1" id="phone-nav">
+            <div>
+              <a href="mailto:<%= businessDetails.email %>" class="phone-tag nav-link">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <%= businessDetails.email %>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item phone-nav-1" id="phone-nav">
+            <div>
+              <a href="tel:<%= businessDetails.mobile %>" class="phone-tag nav-link">
+                <i class="fa fa-phone" aria-hidden="true"></i> <%= businessDetails.mobile %>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-light align-items-end">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNav2">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/" id="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/doctors" id="doctors">Doctors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/hospitals" id="hospitals">Hospitals</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#" id="gallery">Gallery</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="/testimonials" id="testimonials">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about_us" id="aboutUs">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact-us" id="contactUs">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>

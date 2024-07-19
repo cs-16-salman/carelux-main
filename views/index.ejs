@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home</title>
+  <%- include('./partials/head'); %>
+</head>
+
+<body class="page homepage">
+  <input type="hidden" id="nav_id" value="home">
+  <header>
+    <%- include('./partials/header'); %>
+  </header>
+
+  <div class="container-fluid home_banner">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-0">
+        <div class="owl-carousel owl-theme owl-slider" id="home_banner_slider">
+          <div class="item">
+            <img src="images/banner/slider-1.jpg" width="100%" />
+          </div>
+          <div class="item">
+            <img src="images/banner/slider-2.jpg" width="100%" />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-0">
+        <div class="banner-bottom"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ./ content -->
+  <!-- <main role="main"> -->
+  <div class="about-us-section">
+    <div class="container-full-customized">
+      <div class="row align-items-center">
+        <div class="col-lg-7 col-md-7 col-xs-12 wow fadeInLeft" data-wow-delay="0.3s">
+          <div class="ba">
+            <h2 class="title">About Us</h2>
+            <div class="w-90 wow fadeInDown" data-wow-delay="0.9s">
+              <%- businessDetails.about %>
+            </div>
+            <div class="row row-btn">
+              <div class="col-md-6 col-sm-6 col-xs-6 col-6">
+                <a href="/about_us" class="arrow-link common-link-with-border text-left">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-5 col-xs-12 wow fadeInRight" data-wow-delay="0.3s">
+          <div class="image">
+            <img src="images/about-1.png" style="width: 70%; margin-top: 20px;" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg_blue space-pd">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="text-center">
+          <h2 class="title text-color-white f-40 font-weight-bold wow fadeInUp" data-wow-delay="0.2s" style="
+                      visibility: visible;
+                      animation-delay: 0.2s;
+                      animation-name: fadeInUp;
+                    ">
+            Why Choose Carelux Medical Services
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row wcgnf_images_box mt-5">
+      <div class="col-lg-3 col-md-3 col-xs-6 mb-5 wow fadeInUp" data-wow-delay="1.4s" style="
+                  visibility: visible;
+                  animation-delay: 1.4s;
+                  animation-name: fadeInUp;
+                ">
+        <div class="image mb-3">
+          <img src="images/icons/cardiac_surgery.png" />
+        </div>
+        <div class="caption">
+          <p class="text-color-white f-17">Cardiac Surgery</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-xs-6 mb-5 wow fadeInUp" data-wow-delay="1.6s" style="
+                  visibility: visible;
+                  animation-delay: 1.6s;
+                  animation-name: fadeInUp;
+                ">
+        <div class="image mb-3">
+          <img src="images/icons/oncology.png" />
+        </div>
+        <div class="caption">
+          <p class="text-color-white f-17">Oncology</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-xs-6 mb-5 wow fadeInUp" data-wow-delay="0.4s" style="
+                  visibility: visible;
+                  animation-delay: 0.4s;
+                  animation-name: fadeInUp;
+                ">
+        <div class="image mb-3">
+          <img src="images/icons/neuron.png" />
+        </div>
+        <div class="caption">
+          <p class="text-color-white f-17">Neuro Surgery</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-xs-6 mb-5 wow fadeInUp" data-wow-delay="0.6s" style="
+                  visibility: visible;
+                  animation-delay: 0.6s;
+                  animation-name: fadeInUp;
+                ">
+        <div class="image mb-3">
+          <img src="images/icons/ent.png" />
+        </div>
+        <div class="caption">
+          <p class="text-color-white f-17">ENT</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-xs-6 mb-5 wow fadeInUp" data-wow-delay="0.8s" style="
+                  visibility: visible;
+                  animation-delay: 0.8s;
+                  animation-name: fadeInUp;
+                ">
+        <div class="image mb-3">
+          <img src="images/icons/orthopedics.png" />
+        </div>
+        <div class="caption">
+          <p class="text-color-white f-17">Orthopedic</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-xs-6 mb-5 wow fadeInUp" data-wow-delay="1s" style="
+                  visibility: visible;
+                  animation-delay: 1s;
+                  animation-name: fadeInUp;
+                ">
+        <div class="image mb-3">
+          <img src="images/icons/opthalmology.png" />
+        </div>
+        <div class="caption">
+          <p class="text-color-white f-17">Opthalmology</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-xs-6 mb-5 wow fadeInUp" data-wow-delay="1.2s" style="
+                  visibility: visible;
+                  animation-delay: 1.2s;
+                  animation-name: fadeInUp;
+                ">
+        <div class="image mb-3">
+          <img src="images/icons/surgery.png" />
+        </div>
+        <div class="caption">
+          <p class="text-color-white f-17">General Surgery</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-xs-6 mb-5 wow fadeInUp" data-wow-delay="1.8s" style="
+                  visibility: visible;
+                  animation-delay: 1.8s;
+                  animation-name: fadeInUp;
+                ">
+        <div class="image mb-3">
+          <img src="images/icons/nephrology.png" />
+        </div>
+        <div class="caption">
+          <p class="text-color-white f-17">Nephrology & Urology</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-section space-pd bg_red">
+    <div class="container-full">
+      <div class="col-lg-12 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown">
+        <h2 class="title text-color-white text-center">Doctor Details</h2>
+      </div>
+      <div class="large-12 columns" style="height: 525px;">
+        <div class="owl-carousel owl-theme" id="owl-carousel-services">
+          <% for(const doc of topDoctors) { %>
+          <div class="item">
+            <div class="white-card">
+              <div class="image-box">
+                <img src="<%= doc.avatar %>" style="padding: 10px" />
+              </div>
+              <div class="image-caption">
+                <h3><%= doc.doc_name %></h3>
+                <div class="premium-blog-post-content line-clamp">
+                  <%- doc.details %>
+                </div>
+                <a href="doctors" class="arrow-link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="success_stories bg_blue space-pd">
+    <div class="container-full">
+      <div class="slider-card">
+        <h2 class="title wow fadeInDown text-center">Success Stories</h2>
+        <div class="owl-carousel owl-theme wow fadeInUp" id="slider-card" data-wow-delay="0.3s">
+          <% for (var i = 0; i < topTestimonials.length; i++) { %>
+          <% const testi = topTestimonials[i]; %>
+          <div class="item" data-hash="testi_slide_<%= i + 1 %>">
+            <div class="card-box white-card-small">
+              <div class="row align-items-center">
+                <div class="col-lg-4 col-4">
+                  <div class="image">
+                    <img src="<%= testi.img %>" alt="" />
+                  </div>
+                </div>
+                <div class="col-lg-8 col-8">
+                  <div class="details">
+                    <div class="name"><strong><%= testi.client_name %></strong></div>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-12">
+                  <%- testi.testimony %>
+                </div>
+              </div>
+            </div>
+          </div>
+          <% } %>
+        </div>
+        <div class="pagination_nav wow fadeInUp" data-wow-delay="0.3s">
+          <% for (var i = 0; i < topTestimonials.length; i++) { %>
+          <a href="#testi_slide_<%= i + 1 %>"><%= i + 1 %></a>
+          <% } %>
+        </div>
+        <div class="left-corner-image wow fadeInLeft" data-wow-delay="0.6s">
+          <div class="image">
+            <img src="images/testimonial-card.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="help_section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12 wow fadeInDown" data-wow-delay="0.2s">
+              <div class="text-center op">
+                <h2 class="title">Our Gallery</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+  </main>
+
+  <%- include('./partials/footer'); %>
+</body>
+
+</html>

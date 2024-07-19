@@ -1,0 +1,204 @@
+<footer class="text-center text-lg-start text-color-white">
+  <!-- Section: Social media -->
+  <section class="footer-top d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fa fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fa fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fa fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fa fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="footer-mid">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">Carelux Medical Services</h6>
+          <a class="navbar-brand" href="/">
+            <img src="images/logo.jpg" alt="" class="logo" />
+          </a>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Link</h6>
+          <p>
+            <a class="text-reset" href="/">Home</a>
+          </p>
+          <p>
+            <a class="text-reset" href="/about_us">About Us</a>
+          </p>
+          <p>
+            <a class="text-reset" href="/contact-us">Contact Us</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Treatment</h6>
+          <p>
+            <a class="text-reset" href="/hospitals">Hospitals</a>
+          </p>
+          <p>
+            <a class="text-reset" href="/doctors">Doctors</a>
+          </p>
+          <p>
+            <a class="text-reset" href="/testimonials">Testimonials</a>
+          </p>
+          <!-- <p>
+            <a class="text-reset" href="/all_treatments">All Treatments</a>
+          </p> -->
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fa fa-home me-3"></i> <%= businessDetails.address %></p>
+          <p>
+            <i class="fa fa-envelope me-3"></i>
+            <%= businessDetails.email %>
+          </p>
+          <p><i class="fa fa-phone me-3"></i> <%= businessDetails.mobile %></p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4 footer-bottom" style="background-color: rgba(0, 0, 0, 0.05)">
+
+    <a class="text-reset fw-bold" href="#">&copy; <p id="copyrightYear" style="display: inline-block;"></p> Copyright: Carelux Medical Services</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<div id="ohsnap"></div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/22-wow.min.js"></script>
+<script src="js/ohsnap.min.js"></script>
+<script src="js/magnific-popup.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/moment.min.js"></script>
+<script type="text/javascript">
+  $("#owl-carousel-services").owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+      },
+      600: {
+        items: 2,
+        nav: false,
+      },
+      1000: {
+        items: 3,
+        nav: false,
+        loop: false,
+      },
+    },
+  });
+
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+
+  (function setCopyRightYear() {
+    const date = new Date();
+    const yr = date.getFullYear();
+    $('#copyrightYear').html(yr);
+  })();
+
+  function googleTranslateElementInit2() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      autoDisplay: false
+    }, 'google_translate_element2');
+  }
+
+  (() => {
+    $('#nav_id').val();
+    $(`#${$('#nav_id').val()}`).toggleClass('menu-btn');
+  })();
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+
+<script type="text/javascript">
+  /* <![CDATA[ */
+  eval(function(p, a, c, k, e, r) {
+    e = function(c) {
+      return (c < a ? '' : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36))
+    };
+    if (!''.replace(/^/, String)) {
+      while (c--) r[e(c)] = k[c] || e(c);
+      k = [function(e) {
+        return r[e]
+      }];
+      e = function() {
+        return '\\w+'
+      };
+      c = 1
+    };
+    while (c--)
+      if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]);
+    return p
+  }('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}', 43, 43, '||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'), 0, {}))
+  /* ]]> */
+</script>

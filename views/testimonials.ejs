@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Testimonials</title>
+  <%- include('./partials/head'); %>
+</head>
+
+<body class="page homepage">
+  <input type="hidden" id="nav_id" value="testimonials">
+  <header>
+    <%- include('./partials/header'); %>
+  </header>
+
+  <div class="banner-area half-bgb auto-height fixed-thumb text-default" style="margin-bottom: 0;">
+    <div class="container">
+      <div class="double-items t55">
+        <div class="row" animation-delay="200">
+          <div class="col-lg-5 col-sm-push-7 info" style="padding-top: 38px">
+            <h4 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp">
+              Testimonials
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- content -->
+  <div class="content">
+    <div class="testimonialpage-main-wrapper">
+      <div class="container">
+        <div class="our-nurses-testimonials testimonialspage-wrapper">
+          <div class="container-full">
+            <div class="text-testimonial testimonial">
+              <div class="row">
+                <% for(const testimonial of testimonials) { %>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s" style="padding: 5px;">
+                  <div class="testimonial-box">
+                    <img src="<%= testimonial.img %>" alt="" class="testi-img" />
+                    <h4><%= testimonial.client_name %></h4>
+                    <div class="premium-blog-post-content line-clamp">
+                      <%- testimonial.testimony %>
+                    </div>
+                    <a href="#">Read More</a>
+                  </div>
+                </div>
+                <% } %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ./ content -->
+
+  <footer>
+    <%- include('./partials/footer'); %>
+  </footer>
+</body>
+
+</html>

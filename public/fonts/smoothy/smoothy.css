@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Smoothy Rsz';
+    src: url('SmoothyRszRegular-SmoothyRszR.eot');
+    src: url('SmoothyRszRegular-SmoothyRszRd41d.eot?#iefix') format('embedded-opentype'),
+        url('SmoothyRszRegular-SmoothyRszR.woff2') format('woff2'),
+        url('SmoothyRszRegular-SmoothyRszR.woff') format('woff'),
+        url('SmoothyRszRegular-SmoothyRszR.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
